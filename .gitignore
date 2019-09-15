@@ -1,6 +1,5 @@
 app/controllers/Pages.php
 app/controllers/Posts.php
 
-app/libraries/Core.php
 app/libraries/Controller.php
 app/libraries/Database.php
