@@ -4,8 +4,3 @@ app/controllers/Posts.php
 app/libraries/Core.php
 app/libraries/Controller.php
 app/libraries/Database.php
-app/.htaccess
-public/.htaccess
-app/bootstrap.php
-.htaccess
-public/index.php
