@@ -29,6 +29,28 @@ class Database
             echo $this->error;
         }
     }
+    public function query($sql)
+    {
+        $this->stmt = $this->dbh->prepare($sql);
+    }
+    public function bind($param,$value,$type=null)
+    {
+        $stmt->bindParam($param,$value);
+    }
+
+    public function execute()
+    {
+        return $this->stmt->execute();
+    }
+    public function getdata()
+    {
+        $this->execute();
+        return $this->stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+    public function numRows()
+    {
+        return $this->stmt->rowCount();
+    }
 
 }
 
